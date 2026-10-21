@@ -1,0 +1,75 @@
+{
+  "feature_columns": [
+    "temp_mean_lag1",
+    "temp_mean_lag2",
+    "temp_mean_lag3",
+    "temp_mean_lag7",
+    "temp_mean_lag14",
+    "temp_max_lag1",
+    "temp_min_lag1",
+    "humidity_lag1",
+    "pressure_lag1",
+    "wind_speed_max_lag1",
+    "precipitation_lag1",
+    "cloud_cover_lag1",
+    "temp_range_lag1",
+    "pressure_change_1d",
+    "pressure_change_3d",
+    "temp_roll_mean_3",
+    "temp_roll_mean_7",
+    "temp_roll_mean_30",
+    "temp_roll_std_3",
+    "temp_roll_std_7",
+    "temp_roll_std_30",
+    "doy_sin",
+    "doy_cos",
+    "city"
+  ],
+  "cities": [
+    "Bengaluru",
+    "Delhi",
+    "Indore",
+    "Kolkata",
+    "Mumbai"
+  ],
+  "winner": "Ridge",
+  "rain_winner": "RandomForest",
+  "interval_offsets_h1": [
+    -0.99,
+    1.01
+  ],
+  "horizon_intervals_80": {
+    "1": [
+      -0.99,
+      1.01
+    ],
+    "2": [
+      -1.54,
+      1.66
+    ],
+    "3": [
+      -1.79,
+      1.98
+    ],
+    "4": [
+      -1.97,
+      2.14
+    ],
+    "5": [
+      -2.05,
+      2.34
+    ],
+    "6": [
+      -2.13,
+      2.33
+    ],
+    "7": [
+      -2.19,
+      2.35
+    ]
+  },
+  "data_range": [
+    "2014-01-01",
+    "2026-10-20"
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "task": "next-day mean temperature (\u00b0C), shared model for 5 cities",
+  "test_period": [
+    "2025-10-21",
+    "2026-10-20"
+  ],
+  "winner": "Ridge",
+  "winner_cv_mae": 0.626,
+  "winner_best_params": {
+    "model__alpha": "0.1"
+  },
+  "leaderboard": [
+    {
+      "model": "MLP",
+      "MAE": 0.657,
+      "RMSE": 0.903,
+      "R2": 0.96
+    },
+    {
+      "model": "XGBoost",
+      "MAE": 0.659,
+      "RMSE": 0.897,
+      "R2": 0.961
+    },
+    {
+      "model": "Ridge",
+      "MAE": 0.672,
+      "RMSE": 0.923,
+      "R2": 0.959
+    },
+    {
+      "model": "RandomForest",
+      "MAE": 0.678,
+      "RMSE": 0.925,
+      "R2": 0.958
+    },
+    {
+      "model": "Baseline: Persistence (tomorrow = today)",
+      "MAE": 0.702,
+      "RMSE": 0.985,
+      "R2": 0.953
+    },
+    {
+      "model": "Baseline: Seasonal average (climatology)",
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    }
+  ],
+  "prediction_interval_80_offsets_c": [
+    -0.99,
+    1.01
+  ],
+  "horizon_mae": [
+    {
+      "model": "Ridge",
+      "horizon": 1,
+      "MAE": 0.672,
+      "RMSE": 0.923,
+      "R2": 0.959
+    },
+    {
+      "model": "Persistence",
+      "horizon": 1,
+      "MAE": 0.702,
+      "RMSE": 0.985,
+      "R2": 0.953
+    },
+    {
+      "model": "Seasonal average",
+      "horizon": 1,
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    },
+    {
+      "model": "Ridge",
+      "horizon": 2,
+      "MAE": 1.014,
+      "RMSE": 1.387,
+      "R2": 0.906
+    },
+    {
+      "model": "Persistence",
+      "horizon": 2,
+      "MAE": 1.06,
+      "RMSE": 1.476,
+      "R2": 0.894
+    },
+    {
+      "model": "Seasonal average",
+      "horizon": 2,
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    },
+    {
+      "model": "Ridge",
+      "horizon": 3,
+      "MAE": 1.19,
+      "RMSE": 1.602,
+      "R2": 0.875
+    },
+    {
+      "model": "Persistence",
+      "horizon": 3,
+      "MAE": 1.247,
+      "RMSE": 1.727,
+      "R2": 0.855
+    },
+    {
+      "model": "Seasonal average",
+      "horizon": 3,
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    },
+    {
+      "model": "Ridge",
+      "horizon": 4,
+      "MAE": 1.308,
+      "RMSE": 1.745,
+      "R2": 0.852
+    },
+    {
+      "model": "Persistence",
+      "horizon": 4,
+      "MAE": 1.391,
+      "RMSE": 1.903,
+      "R2": 0.824
+    },
+    {
+      "model": "Seasonal average",
+      "horizon": 4,
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    },
+    {
+      "model": "Ridge",
+      "horizon": 5,
+      "MAE": 1.402,
+      "RMSE": 1.862,
+      "R2": 0.831
+    },
+    {
+      "model": "Persistence",
+      "horizon": 5,
+      "MAE": 1.504,
+      "RMSE": 2.057,
+      "R2": 0.794
+    },
+    {
+      "model": "Seasonal average",
+      "horizon": 5,
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    },
+    {
+      "model": "Ridge",
+      "horizon": 6,
+      "MAE": 1.484,
+      "RMSE": 1.959,
+      "R2": 0.813
+    },
+    {
+      "model": "Persistence",
+      "horizon": 6,
+      "MAE": 1.608,
+      "RMSE": 2.188,
+      "R2": 0.767
+    },
+    {
+      "model": "Seasonal average",
+      "horizon": 6,
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    },
+    {
+      "model": "Ridge",
+      "horizon": 7,
+      "MAE": 1.538,
+      "RMSE": 2.024,
+      "R2": 0.801
+    },
+    {
+      "model": "Persistence",
+      "horizon": 7,
+      "MAE": 1.677,
+      "RMSE": 2.277,
+      "R2": 0.748
+    },
+    {
+      "model": "Seasonal average",
+      "horizon": 7,
+      "MAE": 1.464,
+      "RMSE": 1.93,
+      "R2": 0.819
+    }
+  ],
+  "horizon_intervals_80": {
+    "1": [
+      -0.99,
+      1.01
+    ],
+    "2": [
+      -1.54,
+      1.66
+    ],
+    "3": [
+      -1.79,
+      1.98
+    ],
+    "4": [
+      -1.97,
+      2.14
+    ],
+    "5": [
+      -2.05,
+      2.34
+    ],
+    "6": [
+      -2.13,
+      2.33
+    ],
+    "7": [
+      -2.19,
+      2.35
+    ]
+  },
+  "rain_classification": {
+    "accuracy": 0.873,
+    "precision": 0.85,
+    "recall": 0.776,
+    "f1": 0.812,
+    "roc_auc": 0.943,
+    "confusion_matrix": [
+      [
+        1093,
+        88
+      ],
+      [
+        144,
+        500
+      ]
+    ],
+    "winner": "RandomForest",
+    "positive_rate_test": 0.353
+  },
+  "feature_importance_top15": [
+    {
+      "feature": "temp_mean_lag1",
+      "importance": 5.852944445340362
+    },
+    {
+      "feature": "temp_mean_lag2",
+      "importance": 1.4048157182511884
+    },
+    {
+      "feature": "temp_roll_mean_3",
+      "importance": 0.9218903114212471
+    },
+    {
+      "feature": "temp_min_lag1",
+      "importance": 0.41633187322580073
+    },
+    {
+      "feature": "temp_max_lag1",
+      "importance": 0.2924327148309849
+    },
+    {
+      "feature": "temp_roll_mean_7",
+      "importance": 0.12206550487705421
+    },
+    {
+      "feature": "temp_range_lag1",
+      "importance": 0.06043929793654788
+    },
+    {
+      "feature": "temp_mean_lag3",
+      "importance": 0.048755626333066536
+    },
+    {
+      "feature": "humidity_lag1",
+      "importance": 0.030232432216196804
+    },
+    {
+      "feature": "doy_cos",
+      "importance": 0.021749443579171347
+    },
+    {
+      "feature": "temp_mean_lag14",
+      "importance": 0.008012025201654916
+    },
+    {
+      "feature": "doy_sin",
+      "importance": 0.007968072876268661
+    },
+    {
+      "feature": "temp_mean_lag7",
+      "importance": 0.00687455256685301
+    },
+    {
+      "feature": "city",
+      "importance": 0.004424465483490248
+    },
+    {
+      "feature": "temp_roll_std_7",
+      "importance": 0.0018729261000184794
+    }
+  ],
+  "shap_summary_generated": true,
+  "error_analysis": {
+    "mae_by_month": {
+      "Jan": 0.689,
+      "Feb": 0.668,
+      "Mar": 0.81,
+      "Apr": 0.758,
+      "May": 0.788,
+      "Jun": 0.88,
+      "Jul": 0.673,
+      "Aug": 0.518,
+      "Sep": 0.638,
+      "Oct": 0.641,
+      "Nov": 0.491,
+      "Dec": 0.509
+    },
+    "mae_by_season": {
+      "Monsoon": 0.676,
+      "Post-monsoon": 0.567,
+      "Summer": 0.786,
+      "Winter": 0.62
+    },
+    "mae_extreme_heat_days_actual_ge_35C": 0.972,
+    "plain_language": "The model is most accurate in Nov and least accurate in Jun. Errors are largest during the monsoon and in periods of rapid weather change, because day-to-day temperature then depends on rain and cloud events that yesterday's readings cannot fully reveal. On extreme-heat days (actual mean >= 35\u00b0C) the MAE is 0.972\u00b0C. Season-wise MAE: {'Monsoon': 0.676, 'Post-monsoon': 0.567, 'Summer': 0.786, 'Winter': 0.62}."
+  }
+}
